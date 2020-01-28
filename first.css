@@ -1,0 +1,14 @@
+body { background-color: white; color: black;
+    font-family: Courier; padding: 42px;
+}
+h1 { font-family: Helvetica;
+}
+h2 { font-family: Helvetica;
+}
+h3 { font-family: Courier;
+}
+nav a {
+     color: cornflowerblue;
+ }
+header a { color: cadetblue;
+}
