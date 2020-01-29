@@ -1,14 +1,26 @@
-body { background-color: white; color: black;
-    font-family: Courier; padding: 42px;
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+header { background-color: #292a2f; display: block;
 }
-h1 { font-family: Helvetica;
+body { background-color: #121212; color: #e88573; margin: 0px;
+    font-family: 'Poppins', sans-serif;
 }
-h2 { font-family: Helvetica;
+
+main { padding-left: 50px; padding-right: 50px;
 }
-h3 { font-family: Courier;
+
+#header { padding-left: 50px; padding-right: 50px; padding-top: 20px;
 }
-nav a {
-     color: cornflowerblue;
- }
+
+h1 { font-family: 'Poppins', sans-serif; color: #660033;
+}
+h2 { font-family: 'Poppins', sans-serif; color: #ee82b1;
+}
+h3 { font-family: 'Poppins', sans-serif; color: #88dcfb;
+}
+nav a { color: cornflowerblue;
+}
 header a { color: cadetblue;
+}
+footer { padding-left: 50px; padding-right: 50px;
 }
