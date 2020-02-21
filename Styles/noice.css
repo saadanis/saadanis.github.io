@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+#container {
+    display: grid;
+    grid-column: 10;
+}
+.item {
+    height: 100px;
+    width: 100px;
+    border: #2F2F2F 2px solid;
+}

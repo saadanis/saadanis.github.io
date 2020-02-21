@@ -1,35 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
 body {
     margin: 0;
+    background-color: #121212;
+    font-family: 'Roboto Slab';
+    color: white;
+}
+
+/*Start of header*/
+#banner {
+     box-shadow: 0 10px 8px black;
+     position: fixed;
+     width: 100%;
+     background-color: rgb(29,29,29);
+}
+#banner-child {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 nav {
-    background-color: gray;
-    position: fixed;
-    width: 100%;
-    text-align: center;
-    padding: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px 20px;
 }
 nav a {
     text-decoration: none;
-    padding: 4px;
+    color: gray;
 }
 nav a:hover {
-    background-color: #505050;
+    color: rgb(39,39,39);
 }
-#banner {
-    background-color: lightsteelblue;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
+
+#title {
+    padding: 5px 20px;
 }
-#header {
-    max-width: 1000px;
-    padding: 40px;
-    text-align: center;
-}
+
+/*Start of main*/
 #content {
     max-width: 1000px;
     margin: auto;
-    padding: 40px;
+    padding: 110px 40px;
 }
 .item_container {
     display: flex;
@@ -39,32 +51,41 @@ nav a:hover {
 .item {
     /*max-width: 500px;*/
     min-width: 250px;
-    border: 2px black solid;
+    border: 2px gray solid;
     padding: 10px;
     margin: 10px;
     flex: 1;
 }
-.project:hover {
-    background-color: #edbed1;
-}
-.work:hover {
-    background-color: aliceblue;
-}
-.education:hover {
-    background-color: floralwhite;
+h1 {
+    font-family: 'Roboto';
 }
 h2 {
     text-align: center;
+    font-family: 'Roboto';
+}
+h3 {
+    font-family: 'Roboto';
 }
 .small_item {
-    border: black 2px solid;
+    border: gray 2px solid;
     padding: 10px;
     margin: 10px;
-}
-.small_item:hover{
-    background-color: #88dcfb;
 }
 footer {
     padding: 40px;
     text-align: center;
+}
+/*@media (prefers-color-scheme: light) {*/
+/*    body {*/
+/*        background-color: #eeeeee;*/
+/*    }*/
+/*}*/
+@media (max-width: 700px) {
+    #banner-child {
+        justify-content: space-around;
+    }
+
+    #content {
+        padding: 150px 40px;
+    }
 }
