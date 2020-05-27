@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    background-color: #121212;
+    font-family: 'Roboto Slab';
+    color: white;
+}
+
+/*Start of header*/
+#banner {
+    box-shadow: 0 10px 8px black;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(29,29,29);
+    display: grid;
+    justify-content: space-around;
+
+}
+#banner-child {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+nav {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px 20px 30px 20px;
+}
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+nav a:hover {
+    color: rgb(39,39,39);
+}
+#title {
+    padding: 15px 20px 0px 20px;
+}
+
+/*Start of main*/
+#content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 160px 40px;
+}
+#content a {
+    text-decoration: none;
+    color: white;
+}
+.item_container {
+    display: grid;
+    /*justify-content: stretch;*/
+}
+.item {
+    border: 2px gray solid;
+    padding: 10px;
+    margin: 10px;
+    justify-content: stretch;
+}
+h1 {
+    font-family: 'Roboto';
+}
+h1:hover {
+    color: rgb(170, 170, 170);
+}
+h2 {
+    text-align: center;
+    font-family: 'Roboto';
+}
+h3 {
+    font-family: 'Roboto';
+}
+.small_item {
+    border: gray 2px solid;
+    padding: 10px;
+    margin: 10px;
+}
+.small_item img {
+    height: 50px;
+}
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Media query for light mode.*/
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: #121212;
+    }
+    #banner {
+        box-shadow: 0 10px 8px gray;
+        background-color: rgb(231, 231, 231);
+    }
+    nav a {
+        color: gray;
+    }
+    nav a:hover {
+        color: rgb(39,39,39);
+    }
+    #content a {
+        color: white;
+    }
+    .item {
+        border: 2px gray solid;
+    }
+    h1:hover {
+        color: rgb(170, 170, 170);
+    }
+    .small_item {
+        border: gray 2px solid;
+    }
+}
+
+/* Media query for desktop screens.*/
+@media only screen and (min-width: 768px) {
+
+    .item_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item {
+        /*min-width: 400px;*/
+        flex: 1;
+    }
+
+    /*#content {*/
+    /*    padding: 150px 40px;*/
+    /*}*/
+}
