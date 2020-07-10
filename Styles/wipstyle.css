@@ -1,0 +1,39 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#banner {
+    /*box-shadow: 0 10px 8px black;*/
+    position: fixed;
+    width: 100%;
+    /*background-color: rgb(29,29,29);*/
+    display: grid;
+    justify-content: space-around;
+}
+#banner-child-1 {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    max-width: 1000px;
+    margin: auto;
+    /*padding: 160px 40px;*/
+    padding: 90px 40px;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #banner-child-1 {
+        display: grid;
+    }
+
+    #content {
+        padding: 160px 40px;
+    }
+}
