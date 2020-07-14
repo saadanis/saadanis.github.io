@@ -10,11 +10,16 @@ body {
 /*    background-color: #88dcfb;*/
 /*}*/
 
+#main-title {
+    /*background-color: #2DAAE4;*/
+    padding-right: 40px;
+}
+
 #banner {
     /*box-shadow: 0 10px 8px black;*/
     position: fixed;
     width: 100%;
-    background-color: #e88573;
+    /*background-color: #e88573;*/
     /*max-width: 1000px;*/
     /*background-color: rgb(29,29,29);*/
     /*display: grid;*/
@@ -22,22 +27,25 @@ body {
 }
 
 #menu {
-    display: inline-block;
-    background-color: #edbed1;
+    /*background-color: #edbed1;*/
+    padding: 0px 0px;
 }
 
 #banner-child-1 {
     /*text-align: left;*/
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
-    padding: 0px 40px;
+    padding: 20px 40px;
 }
 
 #content {
     max-width: 1000px;
     margin: auto;
     /*padding: 160px 40px;*/
-    padding: 90px 40px;
+    padding: 150px 40px;
 }
 
 footer {
@@ -53,6 +61,6 @@ footer {
     /*}*/
 
     /*#content {*/
-    /*    padding: 160px 40px;*/
+    /*    padding: 150px 40px;*/
     /*}*/
 }
