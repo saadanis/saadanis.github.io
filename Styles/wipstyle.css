@@ -33,7 +33,7 @@ body {
 
 #banner-child-1 {
     /*text-align: left;*/
-    align-items: center;
+    align-items: baseline;
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
