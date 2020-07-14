@@ -15,6 +15,30 @@ body {
     padding-right: 40px;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}
+
 #banner {
     /*box-shadow: 0 10px 8px black;*/
     position: fixed;
@@ -28,6 +52,8 @@ body {
 
 #menu {
     /*background-color: #edbed1;*/
+    text-decoration: none;
+    text-decoration-line: none;
     padding: 0px 0px;
 }
 
