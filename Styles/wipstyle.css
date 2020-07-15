@@ -44,12 +44,16 @@ a:active {
     color: #404040;
 }
 
-#main-title {
+#main-title>a {
     color: black;
 }
 
 .first-sentence {
     font-weight: bold;
+}
+
+#astronaut {
+    display: inline;
 }
 
 #banner {
