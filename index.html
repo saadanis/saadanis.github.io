@@ -5,23 +5,19 @@
         Saad Anis
     </title>
 </head>
-<body>
+<body onload="loadMenu();loadFooter();">
 <header id="banner">
     <link rel="stylesheet" href="Styles/wipstyle.css">
     <div id="banner-child-1">
         <h1 id="main-title"><a href="index.html">saadanis.com</a></h1>
-        <nav id="menu">
-            <a href="projects.html"><img src="./Images/icons8-briefcase.svg" width="30px" title="Projects"/></a>&ensp;
-            <a href="./resume.html"><img src="./Images/icons8-document.svg" width="30px" title="Resume"/></a>&ensp;
-            <a href="./about.html"><img src="./Images/icons8-user-male.svg" width="30px" title="About"/></a>
-        </nav>
+        <nav id="menu"></nav>
     </div>
 </header>
 <main id="content">
 <!--    <img src="./Images/project.svg" width="50px">-->
     <h2>hello</h2>
     <h3>welcome to the landing page.</h3>
-    <p>I have to do something with all this internet space.</p>
+    <p>I am currently building an iOS application to start and manage your life's daily routines. You can take a look at it <a href="http://github.com/saadanis/TCAConcept">here.</a></p>
 <!--    <div id="astronaut">-->
 <!--        <p style="margin: 0cm;font-family: Calibri, sans-serif;"><span style="font-size:14px;font-family: Menlo;">&nbsp; &nbsp; &nbsp; &nbsp; _..._</span></p>-->
 <!--        <p style="margin: 0cm;font-family: Calibri, sans-serif;"><span style="font-size:14px;font-family: Menlo;">&nbsp; &nbsp; &nbsp; .&#39; &nbsp; &nbsp; &#39;. &nbsp; &nbsp; &nbsp;_</span></p>-->
@@ -42,10 +38,7 @@
 <!--        <p style="margin: 0cm;font-family: Calibri, sans-serif;">&nbsp;</p>-->
 <!--    </div>-->
 </main>
-<footer>
-    <p>&#169; 2020 Saad Anis<br>
-        Version 1.0
-    </p>
-</footer>
+<footer id="footy"></footer>
+<script src="./index.js"></script>
 </body>
 </html>

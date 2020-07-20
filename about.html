@@ -5,16 +5,12 @@
         About
     </title>
 </head>
-<body>
+<body onload="loadMenu();loadFooter();">
 <header id="banner">
     <link rel="stylesheet" href="Styles/wipstyle.css">
     <div id="banner-child-1">
         <h1 id="main-title"><a href="index.html">saadanis.com</a>/about</h1>
-        <nav id="menu">
-            <a href="projects.html"><img src="./Images/icons8-briefcase.svg" width="30px" title="Projects"/></a>&ensp;
-            <a href="./resume.html"><img src="./Images/icons8-document.svg" width="30px" title="Resume"/></a>&ensp;
-            <a href="./about.html"><img src="./Images/icons8-user-male.svg" width="30px" title="About"/></a>
-        </nav>
+        <nav id="menu"></nav>
     </div>
 </header>
 <main id="content">
@@ -29,10 +25,7 @@
         <a href="http://twitter.com/saadxanis" target="_blank"><img src="./Images/icons8-twitter.svg" width="30px" title="Twitter"/></a>
     </article>
 </main>
-<footer>
-    <p>&#169; 2020 Saad Anis<br>
-        Version 0.5
-    </p>
-</footer>
+<footer id="footy"></footer>
+<script src="index.js"></script>
 </body>
 </html>
