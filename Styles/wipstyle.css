@@ -88,7 +88,7 @@ a:active {
     max-width: 1000px;
     margin: auto;
     /*padding: 160px 40px;*/
-    padding: 150px 40px;
+    padding: 150px 40px 150px 40px;
 }
 
 .article-header {
@@ -117,6 +117,62 @@ a:active {
 
 .skills>a {
     padding-bottom: 10px;
+}
+
+.flag-1-div {
+
+}
+
+.flag-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: black hidden 2px;
+    border-radius: 5px;
+}
+
+.flag-5-div {
+    /*background-color: #edbed1;*/
+    display: grid;
+    /*grid-auto-flow: column;*/
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 5px;
+    align-content: baseline;
+    justify-items: center;
+    /*padding: 40px;*/
+    /*justify-content: ;*/
+}
+
+.flag-5 {
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    width: 100%;
+    /*background-color: #88dcfb;*/
+    border: #404040 2px hidden;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.grades {
+    /*width: auto;*/
+    /*text-align: left;*/
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td {
+    /*border-bottom: 1px solid #ddd;*/
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td:nth-child(odd) {
+    font-weight: bold;
 }
 
 footer {
