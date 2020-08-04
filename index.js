@@ -1,5 +1,5 @@
 const content = document.getElementById('content');
-const menu = document.getElementById('menu')
+const header = document.getElementById('banner-child-1')
 const footer = document.getElementById('footy')
 
 async function loadProjects() {
@@ -14,14 +14,14 @@ async function getProjectHTML() {
     return response.text();
 }
 
-async function loadMenu() {
-    menu.innerHTML = '';
-    const menuHTML = await getMenuHTML();
-    menu.innerHTML = menuHTML;
+async function loadHeader() {
+    header.innerHTML = '';
+    const headerHTML = await getHeaderHTML();
+    header.innerHTML = headerHTML;
 }
 
-async function getMenuHTML() {
-    const url = './menu.html';
+async function getHeaderHTML() {
+    const url = './header.html';
     let response = await fetch(url);
     return response.text();
 }
