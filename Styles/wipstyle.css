@@ -1,6 +1,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
+    font-size: 102%;
+    line-height: 150%;
     /*border: 0;*/
 }
 
@@ -77,9 +79,10 @@ a:active {
     /*box-shadow: 0 10px 8px black;*/
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(225, 225, 225, 0.3);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    border-bottom: rgba(225, 225, 225, 0.5) solid 1px;
     /*max-width: 1000px;*/
     /*background-color: rgb(29,29,29);*/
     /*display: grid;*/
@@ -98,7 +101,7 @@ a:active {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1000px;
+    max-width: 768px;
     margin: auto;
     padding: 20px 40px;
     /*border-bottom: rgba(64, 64, 64, 0.30) solid 2px;*/
@@ -106,10 +109,10 @@ a:active {
 }
 
 #content {
-    max-width: 1000px;
+    max-width: 768px;
     margin: auto;
-    /*padding: 160px 40px;*/
-    padding: 150px 40px 150px 40px;
+    padding: 150px 40px;
+    /*padding: 150px 40px 150px 40px;*/
 }
 
 .article-header {
@@ -160,7 +163,7 @@ a:active {
     /*grid-auto-flow: column;*/
     /*grid-template-columns: auto auto auto auto auto;*/
     /*grid-auto-columns: 30px;*/
-    grid-template-columns: repeat(auto-fill, minmax(40px, 196px));
+    grid-template-columns: repeat(auto-fill, minmax(40px, 145px));
     grid-gap: 5px;
     align-content: baseline;
     /*justify-items: center;*/
