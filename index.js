@@ -1,6 +1,7 @@
 const content = document.getElementById('content');
-const header = document.getElementById('banner-child-1')
-const footer = document.getElementById('footy')
+const header = document.getElementById('banner-child-1');
+const footer = document.getElementById('footy');
+const head = document.getElementById('big-head');
 
 async function loadProjects() {
     content.innerHTML = '';
@@ -14,10 +15,22 @@ async function getProjectHTML() {
     return response.text();
 }
 
+async function loadCSS() {
+    head.innerHTML = '';
+    const cssHTML = await getCSSLoaderHTML();
+    head.innerHTML = cssHTML;
+}
+
 async function loadHeader() {
     header.innerHTML = '';
     const headerHTML = await getHeaderHTML();
     header.innerHTML = headerHTML;
+}
+
+async function getCSSLoaderHTML() {
+    const url = './cssloader.html';
+    let response = await fetch(url);
+    return response.text();
 }
 
 async function getHeaderHTML() {
